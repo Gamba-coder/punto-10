@@ -1,0 +1,19 @@
+# Precio habitual de una barra de pan
+precio_habitual = 3.49
+
+# Descuento aplicado para pan que no es del día
+descuento = 0.60
+
+# Leer el número de barras de pan que no son del día
+num_barras_no_dia = int(input("Introduce el número de barras de pan que no son del día: "))
+
+# Calcular el descuento por barra
+precio_descuento = precio_habitual * (1 - descuento)
+
+# Calcular el coste total
+coste_total = precio_descuento * num_barras_no_dia
+
+# Mostrar los resultados
+print(f"Precio habitual de una barra de pan: ${precio_habitual:.2f}")
+print(f"Descuento aplicado por no ser fresca: ${precio_habitual * descuento:.2f}")
+print(f"Coste final total: ${coste_total:.2f}")
